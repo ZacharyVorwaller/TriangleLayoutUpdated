@@ -44,7 +44,7 @@ namespace TriangleLayout
                     {
                         result += "Invalid row, using default of 'F'<br/>";
                     }
-                    if (!Int32.TryParse(TextBoxMaxColumn.Text, out column) || column % 2 == 0 || column < 12 || column > 42)
+                    if (!Int32.TryParse(TextBoxMaxColumn.Text, out column) || column % 2 != 0 || column < 12 || column > 42)
                     {
                         column = 12;
                         result += "Invalid column, using default of 12<br/>";
